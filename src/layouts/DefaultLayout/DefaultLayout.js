@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import styles from './DefaultLayout.module.scss';
 import classNames from 'classnames/bind';
+
 import Header from '../components/Header/Header';
 import Sidebar from '../components/Sidebar/Sidebar';
-import styles from './DefaultLayout.module.scss';
 
 const cx = classNames.bind(styles);
 

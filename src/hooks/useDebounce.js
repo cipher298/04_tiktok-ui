@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from 'react';
 
 function useDebounce(value, delay) {
@@ -7,7 +8,6 @@ function useDebounce(value, delay) {
     const handler = setTimeout(() => setDebounceValue(value), delay);
 
     return () => clearTimeout(handler);
-    // eslint-disable-next-line
   }, [value]);
 
   return debounceValue;

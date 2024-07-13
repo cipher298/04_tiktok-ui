@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import styles from './SuggestedAccounts.module.scss';
+
 import AccountItem from './AccountItem';
 
 const cx = classNames.bind(styles);

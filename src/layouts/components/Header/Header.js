@@ -1,16 +1,24 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from 'react-router-dom';
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
-import images from '~/assets/images';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
-
-import { faCircleQuestion, faKeyboard, faUser } from '@fortawesome/free-regular-svg-icons';
-import { faCoins, faEllipsisVertical, faGear, faSignOut } from '@fortawesome/free-solid-svg-icons';
-import Image from '~/components/Image/Image';
+import { Link } from 'react-router-dom';
+import {
+  faCircleQuestion,
+  faKeyboard,
+  faUser,
+} from '@fortawesome/free-regular-svg-icons';
+import {
+  faCoins,
+  faEllipsisVertical,
+  faGear,
+  faSignOut,
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { DirectIcon, MessageIcon, UploadIcon } from '~/components/Icon/Icon';
+
+import images from '~/assets/images';
+import Image from '~/components/Image/Image';
 import Menu from '~/components/Popper/Menu/Menu';
 import Button from '~/components/Button/Button';
 import Search from '../Search/Search';
@@ -269,7 +277,10 @@ function Header() {
             </>
           )}
 
-          <Menu items={currentUser ? userMenu : MENU_ITEM} onChange={handleMenuChange}>
+          <Menu
+            items={currentUser ? userMenu : MENU_ITEM}
+            onChange={handleMenuChange}
+          >
             {currentUser ? (
               <Image
                 src="https://p16-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/40d713385373f9b49c67d22ec2d917b2.jpeg?lk3s=a5d48078&nonce=84306&refresh_token=46b4a0d72230284971caa60ddcccfe8e&x-expires=1720249200&x-signature=exAO058V3poqf%2Bba%2B5rneJWQkXo%3D&shp=a5d48078&shcp=b59d6b55"

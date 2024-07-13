@@ -1,22 +1,22 @@
 .wrapper {
-    width: 100%;
-    max-height: min((100vh - 96px) - 60px, 734px);
-    min-height: 100px;
-    background: rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 12px;
-    border-radius: 8px;
-    padding-top: 8px;
-    box-sizing: border-box;
-    overflow: hidden auto;
-    list-style-type: none;
-    padding-inline-start: 0px;
+  width: 100%;
+  max-height: min((100vh - 96px) - 60px, 734px);
+  min-height: 100px;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 12px;
+  border-radius: 8px;
+  padding-top: 8px;
+  box-sizing: border-box;
+  overflow: hidden auto;
+  list-style-type: none;
+  padding-inline-start: 0px;
 }
 
 .search-title {
-    height: 30px;
-    padding: 5px 12px;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 600;
-    color: rgba(22, 24, 35, 0.5);
+  height: 30px;
+  padding: 5px 12px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  color: rgba(22, 24, 35, 0.5);
 }

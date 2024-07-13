@@ -1,69 +1,69 @@
 .wrapper {
-    --search-border-radius: 92px;
-    --search-hight: 46px;
-    --search-top-spacer: 9px;
-    --search-button-width: 52px;
+  --search-border-radius: 92px;
+  --search-hight: 46px;
+  --search-top-spacer: 9px;
+  --search-button-width: 52px;
 
-    width: 100%;
-    height: var(--default-layout-header-hight);
-    box-shadow: 0 1px 1px rgb(0 0 0 / 12%);
-    background-color: var(--white);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  height: var(--default-layout-header-hight);
+  box-shadow: 0 1px 1px rgb(0 0 0 / 12%);
+  background-color: var(--white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
 }
 
 .inner {
-    width: var(--default-layout-width);
-    height: 100%;
-    padding: 0 var(--default-layout-horizontal-spacer);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: var(--default-layout-width);
+  height: 100%;
+  padding: 0 var(--default-layout-horizontal-spacer);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo-link {
-    display: flex;
+  display: flex;
 }
 
 .custom-login {
-    color: red;
+  color: red;
 }
 
 .actions {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .more-btn {
-    background-color: transparent;
-    margin-left: 28px;
-    padding: 4px 8px;
-    font-size: 2rem;
-    cursor: pointer;
+  background-color: transparent;
+  margin-left: 28px;
+  padding: 4px 8px;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 .action-btn {
-    background-color: transparent;
-    font-size: 2.2rem;
-    color: #161823;
-    padding: 4px 12px;
-    cursor: pointer;
+  background-color: transparent;
+  font-size: 2.2rem;
+  color: #161823;
+  padding: 4px 12px;
+  cursor: pointer;
 }
 
 .user-avatar {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-left: 12px;
-    cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 12px;
+  cursor: pointer;
 }

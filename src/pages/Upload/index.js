@@ -1,4 +1,3 @@
-import React from 'react';
 function Upload() {
   return <h2>Upload Page</h2>;
 }
