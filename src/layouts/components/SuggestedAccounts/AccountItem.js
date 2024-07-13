@@ -1,10 +1,9 @@
-import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import styles from './SuggestedAccounts.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle } from '@fortawesome/free-regular-svg-icons';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
-import Tippy from '@tippyjs/react';
+import Tippy from '@tippyjs/react/headless';
 import AccountPreview from './AccountPreview';
 
 const cx = classNames.bind(styles);
@@ -22,7 +21,13 @@ function AccountItem() {
 
   return (
     <div>
-      <Tippy interactive delay={[800, 0]} placement="bottom" render={renderPreview}>
+      <Tippy
+        offset={[-20, 0]}
+        interactive
+        delay={[600, 0]}
+        placement="bottom"
+        render={renderPreview}
+      >
         <div className={cx('account-item')}>
           <img
             className={cx('avatar')}
@@ -33,7 +38,10 @@ function AccountItem() {
           <div className={cx('item-info')}>
             <h4 className={cx('nickname')}>
               <strong>trungoccho</strong>
-              <FontAwesomeIcon className={cx('check')} icon={faCheckCircle} />{' '}
+              <FontAwesomeIcon
+                className={cx('check')}
+                icon={faCheckCircle}
+              />{' '}
             </h4>
             <p className={cx('name')}>Trung Oc Cho</p>
           </div>
